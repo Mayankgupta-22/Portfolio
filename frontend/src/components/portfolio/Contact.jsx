@@ -32,7 +32,6 @@ const socials = [
   { label: "officiamayankgupta22@gmail.com", href: "mailto:officiamayankgupta22@gmail.com", Icon: Mail },
   { label: "GitHub", href: "https://github.com/Mayankgupta-22", Icon: GithubIcon },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/mayank-gupta-858971282/", Icon: LinkedinIcon },
-  
 ];
 
 export default function Contact() {
