@@ -136,7 +136,7 @@ export default function Background() {
       el.style.setProperty("--drift-r", `${driftR}deg`);
       el.style.animation = `code-drift-up ${duration}s linear forwards`;
       el.style.fontSize = `${(11 + Math.random() * 4).toFixed(0)}px`;
-      el.style.opacity = (0.07 + Math.random() * 0.08).toFixed(2);
+      el.style.opacity = (0.04 + Math.random() * 0.05).toFixed(2);
 
       layer.appendChild(el);
       spawned.push(el);
