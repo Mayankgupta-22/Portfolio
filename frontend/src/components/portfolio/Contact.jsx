@@ -20,14 +20,6 @@ function LinkedinIcon(props) {
   );
 }
 
-function XIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
-    </svg>
-  );
-}
-
 const socials = [
   { label: "officiamayankgupta22@gmail.com", href: "mailto:officiamayankgupta22@gmail.com", Icon: Mail },
   { label: "GitHub", href: "https://github.com/Mayankgupta-22", Icon: GithubIcon },
@@ -40,7 +32,7 @@ export default function Contact() {
       <Card className="relative items-center overflow-hidden px-6 py-16 text-center sm:px-10">
         <div
           aria-hidden
-          className="pointer-events-none absolute -top-32 left-1/2 size-96 -translate-x-1/2 rounded-full bg-foreground/[0.04] blur-3xl"
+          className="pointer-events-none absolute -top-32 left-1/2 size-96 -translate-x-1/2 rounded-full bg-foreground/4 blur-3xl"
         />
         <h2 className="relative text-3xl font-extrabold tracking-tight sm:text-5xl">
           Let&apos;s build something together.

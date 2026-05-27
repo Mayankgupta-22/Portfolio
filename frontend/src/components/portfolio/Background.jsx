@@ -167,9 +167,9 @@ export default function Background() {
   return (
     <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
       {/* Soft drifting blobs */}
-      <div className="absolute -top-24 -left-24 size-[500px] rounded-full bg-foreground/[0.05] blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_infinite]" />
-      <div className="absolute top-[30%] -right-24 size-[400px] rounded-full bg-foreground/[0.04] blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_-5s_infinite]" />
-      <div className="absolute -bottom-12 left-[30%] size-[350px] rounded-full bg-foreground/[0.05] blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_-10s_infinite]" />
+      <div className="absolute -top-24 -left-24 size-[500px] rounded-full bg-foreground/5 blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_infinite]" />
+      <div className="absolute top-[30%] -right-24 size-[400px] rounded-full bg-foreground/4 blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_-5s_infinite]" />
+      <div className="absolute -bottom-12 left-[30%] size-[350px] rounded-full bg-foreground/5 blur-[100px] motion-safe:animate-[blob-float_20s_ease-in-out_-10s_infinite]" />
 
       {/* Faint grid for a touch of structure */}
       <div
