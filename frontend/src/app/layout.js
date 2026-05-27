@@ -11,9 +11,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// TODO: once you have a final domain, add `metadataBase: new URL("https://your-domain")`
+// and an `openGraph.images` / `twitter.images` entry (e.g. a 1200x630 og.png in /public)
+// for rich social link previews.
 export const metadata = {
-  title: "Mayank Gupta — Portfolio",
-  description: "Full-Stack Developer. Building fast, reliable web applications.",
+  title: {
+    default: "Mayank Gupta — Full-Stack Developer",
+    template: "%s · Mayank Gupta",
+  },
+  description:
+    "Mayank Gupta — full-stack developer specializing in the MERN stack and Next.js. I build fast, accessible dashboards, SaaS platforms, and web apps.",
+  keywords: [
+    "Mayank Gupta",
+    "Full-Stack Developer",
+    "MERN Stack",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Web Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Mayank Gupta", url: "https://github.com/Mayankgupta-22" }],
+  creator: "Mayank Gupta",
+  openGraph: {
+    type: "website",
+    siteName: "Mayank Gupta",
+    title: "Mayank Gupta — Full-Stack Developer",
+    description:
+      "Full-stack developer (MERN / Next.js) building fast, accessible web apps.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mayank Gupta — Full-Stack Developer",
+    description:
+      "Full-stack developer (MERN / Next.js) building fast, accessible web apps.",
+  },
 };
 
 // Applied before paint to avoid a flash of the wrong theme on load.
