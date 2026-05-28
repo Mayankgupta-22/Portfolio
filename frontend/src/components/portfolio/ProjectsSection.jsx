@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { CardContent } from "@/components/ui/card";
 import SectionHeading from "./SectionHeading";
 import { Timeline, TimelineItem, TimelineCard } from "./Timeline";
@@ -48,16 +49,24 @@ export default function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
+                <div className="flex flex-wrap gap-2">
                   {project.links.map((link) => (
-                    <a
+                    <Button
                       key={link.label}
-                      href={link.href}
-                      className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="group/link cursor-pointer"
                     >
-                      {link.label}
-                      <ArrowRight className="size-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </a>
+                      <a
+                        href={link.href}
+                        target={link.href.startsWith("http") ? "_blank" : undefined}
+                        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      >
+                        {link.label}
+                        <ArrowRight className="size-3.5 transition-transform group-hover/link:translate-x-0.5" />
+                      </a>
+                    </Button>
                   ))}
                 </div>
               </CardContent>

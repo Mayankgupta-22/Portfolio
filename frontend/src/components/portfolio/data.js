@@ -20,7 +20,7 @@ export const projects = [
       "Cloudinary",
     ],
     links: [
-      { label: "Live demo", href: "#" },
+      { label: "Live demo", href: "https://www.collabxsphere.site/" },
       { label: "GitHub", href: "#" },
     ],
   },
@@ -31,8 +31,9 @@ export const projects = [
       "Enterprise HRMS and Talent Management platform serving 500+ employees with 99.5% uptime. Features responsive dashboards with real-time data updates, dynamic forms, and role-based access control for Admin, HR, and Employee roles. Optimized SSR/CSR rendering and MongoDB queries to cut page load time by 40% and API response time by 62%.",
     tech: ["Next.js", "React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT"],
     links: [
-      { label: "Case study", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "Live demo", href: "https://www.opentalent.in/" },
+      { label: "Data model", href: "/diagrams/hrms-data-model" },
+      { label: "System architecture", href: "/diagrams/hrms-architecture" },
     ],
   },
 ];
